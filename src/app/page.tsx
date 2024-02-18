@@ -23,8 +23,8 @@ export default function Home() {
             </Link>
             <Link href="#about" className="h-[2rem] relative leading-[150%] inline-block shrink-0 whitespace-nowrap">About me
             </Link>
-            <Link href="#testimonials" className="h-[2rem] relative leading-[150%] inline-block shrink-0">Testimonials
-            </Link>
+            {/* <Link href="#testimonials" className="h-[2rem] relative leading-[150%] inline-block shrink-0">Testimonials
+            </Link> */}
           </div>
           <div className="self-stretch w-[23rem] overflow-hidden max-w-full" />
           <button className="cursor-pointer py-[1.17rem] px-[1.75rem] bg-[transparent] rounded-[5.33px] flex flex-row items-center justify-center border-[1.3px] border-solid border-primary hover:bg-mediumslateblue-200 hover:box-border hover:border-[1.3px] hover:border-solid hover:border-mediumslateblue-100">
@@ -46,7 +46,7 @@ export default function Home() {
               <span>software developer</span>
             </b>
             <h3 className="m-0 w-[38.83rem] relative text-[1.5rem] leading-[150%] font-normal font-inherit text-body inline-block max-w-full mq450:text-[1.19rem] mq450:leading-[1.81rem]">
-              I'm an experienced Software Engineer </h3>
+              I&apos;,m an experienced Software Engineer </h3>
           </div>
           <div className="flex flex-row items-start justify-start pt-[1.33rem] px-[0rem] pb-[0rem]">
             <button className="cursor-pointer [border:none] py-[1.17rem] px-[1.44rem] bg-primary rounded-[5.33px] flex flex-row items-center justify-center whitespace-nowrap hover:bg-mediumslateblue-100">
@@ -203,168 +203,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="testimonials" className="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[3rem] box-border max-w-full text-left text-[1rem] text-heading-color font-body-02 mq900:pb-[1.25rem] mq900:box-border mq1350:pb-[1.94rem] mq1350:box-border">
-        <div className="flex-1 bg-bg-shade overflow-hidden flex flex-col items-center justify-start py-[7rem] px-[4rem] box-border gap-[5rem] min-h-[56.38rem] max-w-full shrink-0 mq450:pt-[2.94rem] mq450:pb-[2.94rem] mq450:box-border mq900:gap-[5rem] mq900:pt-[4.56rem] mq900:pb-[4.56rem] mq900:box-border mq1350:gap-[5rem] mq1350:pl-[2rem] mq1350:pr-[2rem] mq1350:box-border">
-          <div className="self-stretch flex flex-col items-start justify-start py-[0rem] px-[1.31rem] box-border gap-[1.33rem] max-w-full">
-            <div className="w-[46.67rem] h-[2rem] relative leading-[150%] font-semibold inline-block max-w-full">
-              Clients Feedback
-            </div>
-            <h1 className="m-0 w-[46.67rem] h-[4.81rem] relative text-[3rem] leading-[120%] font-bold font-inherit inline-block max-w-full mq450:text-[1.81rem] mq450:leading-[2.19rem] mq900:text-[2.38rem] mq900:leading-[2.88rem]">
-              Customer testimonials
-            </h1>
-          </div>
-          <div className="self-stretch flex flex-row flex-wrap items-start justify-start py-[0rem] pr-[1.5rem] pl-[1.31rem] box-border gap-[2.67rem] max-w-full text-body mq900:gap-[2.67rem]">
-            <div className="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start py-[2.67rem] px-[2.56rem] gap-[2.67rem] min-w-[25.94rem] max-w-full border-[1.3px] border-solid border-teal mq450:pt-[1.75rem] mq450:pb-[1.75rem] mq450:box-border mq900:gap-[2.67rem] mq900:min-w-full">
-              <div className="overflow-hidden flex flex-row items-start justify-start gap-[0.33rem]">
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-              </div>
-              <div className="self-stretch h-[6rem] relative leading-[150%] inline-block">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra.
-              </div>
-              <div className="flex flex-row items-center justify-start gap-[1.33rem] text-heading-color mq450:flex-wrap">
-                <img
-                  className="h-[4.67rem] w-[4.67rem] relative rounded-[50%] object-cover"
-                  loading="eager"
-                  alt=""
-                  src="/avatar-image@2x.png"
-                />
-                <div className="flex flex-col items-start justify-start">
-                  <div className="h-[2rem] relative leading-[150%] font-semibold inline-block">
-                    Dianne Russell
-                  </div>
-                  <div className="h-[2rem] relative leading-[150%] text-body inline-block">
-                    Starbucks
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start py-[2.67rem] px-[2.56rem] gap-[2.67rem] min-w-[25.94rem] max-w-full border-[1.3px] border-solid border-teal mq450:pt-[1.75rem] mq450:pb-[1.75rem] mq450:box-border mq900:gap-[2.67rem] mq900:min-w-full">
-              <div className="overflow-hidden flex flex-row items-start justify-start gap-[0.33rem]">
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-              </div>
-              <div className="self-stretch h-[6rem] relative leading-[150%] inline-block">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra.
-              </div>
-              <div className="flex flex-row items-center justify-start gap-[1.33rem] text-heading-color mq450:flex-wrap">
-                <img
-                  className="h-[4.67rem] w-[4.67rem] relative rounded-[50%] object-cover"
-                  alt=""
-                  src="/avatar-image-1@2x.png"
-                />
-                <div className="flex flex-col items-start justify-start">
-                  <div className="h-[2rem] relative leading-[150%] font-semibold inline-block">
-                    Kristin Watson
-                  </div>
-                  <div className="h-[2rem] relative leading-[150%] text-body inline-block">
-                    Louis Vuitton
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start py-[2.67rem] px-[2.56rem] gap-[2.67rem] min-w-[25.94rem] max-w-full border-[1.3px] border-solid border-teal mq450:pt-[1.75rem] mq450:pb-[1.75rem] mq450:box-border mq900:gap-[2.67rem] mq900:min-w-full">
-              <div className="overflow-hidden flex flex-row items-start justify-start gap-[0.33rem]">
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-                <img
-                  className="h-[1.58rem] w-[1.67rem] relative min-h-[1.56rem]"
-                  alt=""
-                  src="/vector-3.svg"
-                />
-              </div>
-              <div className="self-stretch h-[6rem] relative leading-[150%] inline-block">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra.
-              </div>
-              <div className="flex flex-row items-center justify-start gap-[1.33rem] text-heading-color mq450:flex-wrap">
-                <img
-                  className="h-[4.67rem] w-[4.67rem] relative rounded-[50%] object-cover"
-                  alt=""
-                  src="/avatar-image-2@2x.png"
-                />
-                <div className="flex flex-col items-start justify-start">
-                  <div className="h-[2rem] relative leading-[150%] font-semibold inline-block">
-                    Kathryn Murphy
-                  </div>
-                  <div className="h-[2rem] relative leading-[150%] text-body inline-block">
-                    McDonald's
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
       <section id="contact" className="self-stretch overflow-hidden flex flex-col items-center justify-start pt-[9.38rem] px-[1.25rem] pb-[9.31rem] box-border gap-[4rem] max-w-full text-center text-[1.33rem] text-heading-color font-body-02 mq900:gap-[4rem] mq900:pt-[3.94rem] mq900:pb-[3.94rem] mq900:box-border mq1350:gap-[4rem] mq1350:pt-[6.06rem] mq1350:pb-[6.06rem] mq1350:box-border">
         <div className="w-[64rem] flex flex-col items-center justify-start gap-[1.31rem] max-w-full shrink-0">
           <div className="relative leading-[150%] font-semibold mq450:text-[1.06rem] mq450:leading-[1.63rem]">
@@ -475,7 +314,7 @@ export default function Home() {
             </div>
           </button>
           <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[150%] font-normal font-inherit text-body mq450:text-[1.19rem] mq450:leading-[1.81rem]">
-              If the form above doesn't work for any reason. Drop me your email in <Link href="mailto:rajan.tandukar@outlook.com">rajan.tandukar@outlook.com</Link></h3>
+              If the form above doesn&apos;t work for any reason. Drop me your email in <Link href="mailto:rajan.tandukar@outlook.com">rajan.tandukar@outlook.com</Link></h3>
         </div>
       </section>
       <footer className="self-stretch bg-bg-shade overflow-hidden flex flex-col items-center justify-start pt-[6.63rem] pb-[6.69rem] pr-[1.31rem] pl-[1.25rem] box-border gap-[6.69rem] max-w-full text-left text-[1.33rem] text-black font-body-02 mq450:gap-[6.69rem] mq450:pt-[4.31rem] mq450:pb-[4.38rem] mq450:box-border mq900:gap-[6.69rem]">
@@ -499,9 +338,9 @@ export default function Home() {
             <Link href="#contact" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
               Contact
             </Link>
-            <Link href="#testimonials" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
+            {/* <Link href="#testimonials" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
               Testimonials
-            </Link>
+            </Link> */}
             <Link href="#portfolio" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
               Portfolio
             </Link>
@@ -541,7 +380,7 @@ export default function Home() {
           <div className="self-stretch flex flex-row items-start justify-between py-[0rem] px-[0rem] box-border gap-[1.25rem] max-w-full mq900:flex-wrap">
             <div className="w-[28.69rem] flex flex-row items-start justify-start py-[0rem] pr-[0.13rem] pl-[0rem] box-border gap-[1.94rem] max-w-full mq450:flex-wrap mq450:gap-[1.94rem]">
               <div className="flex-1 relative leading-[150%] inline-block min-w-[5.69rem]">
-                Copyright © rajantandukar 2016
+                Copyright &copy; rajantandukar 2023
               </div>
             </div>
           </div>
