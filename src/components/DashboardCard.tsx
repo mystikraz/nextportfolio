@@ -43,15 +43,14 @@ const DashboardCard: NextPage<DashboardCardType> = ({
                             {blogTitleHeadingWillGoHer}
                         </h3>
                         <div className="self-stretch h-[4rem] relative text-[1rem] leading-[150%] text-body inline-block">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Suspendisse varius enim in eros.
+                            Contents coming soon... Plz come back later.
                         </div>
                     </div>
                 </div>
                 <button className="cursor-pointer [border:none] pt-[0rem] px-[0rem] pb-[0.67rem] bg-[transparent] flex flex-row items-center justify-start border-b-[1.3px] border-solid border-primary">
                     <div className="flex flex-row items-center justify-start gap-[1rem]">
                         <div className="h-[1.75rem] relative text-[0.88rem] leading-[150%] font-semibold font-body-02 text-black text-left inline-block">
-                            View In Dribbble
+                            View
                         </div>
                         <img className="h-[1rem] w-[1rem] relative" alt="" src={vector} />
                     </div>
