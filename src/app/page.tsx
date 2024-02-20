@@ -15,20 +15,20 @@ export default function Home() {
             alt=""
             src="/logo.svg"
           /> */}
-          <div className="h-[2.25rem] w-[23rem] max-w-full" />
-          <div className="w-[30.25rem] overflow-hidden shrink-0 flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq1800:hidden">
-            <Link href="/" className="h-[2rem] relative leading-[150%] text-primary inline-block shrink-0">Home
+          <div className="h-[2.25rem] w-[36rem] max-w-full" />
+          <div className="w-[20.25rem] overflow-hidden shrink-0 flex flex-row items-start justify-between max-w-full mq1800:hidden">
+            <Link href="/" className="h-[2rem] relative leading-[150%] text-primary inline-block shrink-0 no-underline">Home
             </Link>
-            <Link href="#portfolio" className="h-[2rem] relative leading-[150%] inline-block shrink-0">Portfolio
+            <Link href="#portfolio" className="h-[2rem] relative leading-[150%] inline-block shrink-0 no-underline">Portfolio
             </Link>
-            <Link href="#about" className="h-[2rem] relative leading-[150%] inline-block shrink-0 whitespace-nowrap">About me
+            <Link href="#about" className="h-[2rem] relative leading-[150%] inline-block shrink-0 whitespace-nowrap no-underline">About me
             </Link>
             {/* <Link href="#testimonials" className="h-[2rem] relative leading-[150%] inline-block shrink-0">Testimonials
             </Link> */}
           </div>
-          <div className="self-stretch w-[23rem] overflow-hidden max-w-full" />
+          <div className="self-stretch w-[40rem] overflow-hidden max-w-full" />
           <button className="cursor-pointer py-[1.17rem] px-[1.75rem] bg-[transparent] rounded-[5.33px] flex flex-row items-center justify-center border-[1.3px] border-solid border-primary hover:bg-mediumslateblue-200 hover:box-border hover:border-[1.3px] hover:border-solid hover:border-mediumslateblue-100">
-            <Link href="#contact" className="h-[2rem] relative text-[1rem] leading-[150%] font-body-02 text-primary text-left inline-block whitespace-nowrap">
+            <Link href="#contact" className="h-[2rem] relative text-[1rem] leading-[150%] font-body-02 text-primary text-left inline-block whitespace-nowrap no-underline">
               Contact Me
             </Link>
           </button>
@@ -62,6 +62,7 @@ export default function Home() {
           loading="eager"
           alt="rajan"
           src="/rajan.jpeg"
+          style={{ width: '20%', height: '20%', margin: '0 auto' }}
         />
       </section>
       <section className="overflow-hidden flex flex-col items-start justify-center py-[9.33rem] pr-[5.38rem] pl-[5.33rem] box-border gap-[6.67rem] max-w-full text-center text-[1.33rem] text-heading-color font-body-02 mq450:pt-[3.94rem] mq450:pb-[3.94rem] mq450:box-border mq900:gap-[6.67rem] mq900:py-[6.06rem] mq900:px-[1.31rem] mq900:box-border mq1350:gap-[6.67rem] mq1350:pl-[2.63rem] mq1350:pr-[2.69rem] mq1350:box-border">
@@ -126,6 +127,7 @@ export default function Home() {
             loading="eager"
             alt=""
             src="/rajan_yak.jpg"
+            style={{ width: '20%', height: '20%', margin: '0 auto' }}
           />
           <div className="flex-1 flex flex-col items-start justify-start gap-[2rem] min-w-[33.38rem] max-w-full mq450:gap-[2rem] mq900:min-w-full">
             <div className="flex flex-col items-start justify-start gap-[0.67rem]">
@@ -203,7 +205,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-     
+
       <section id="contact" className="self-stretch overflow-hidden flex flex-col items-center justify-start pt-[9.38rem] px-[1.25rem] pb-[9.31rem] box-border gap-[4rem] max-w-full text-center text-[1.33rem] text-heading-color font-body-02 mq900:gap-[4rem] mq900:pt-[3.94rem] mq900:pb-[3.94rem] mq900:box-border mq1350:gap-[4rem] mq1350:pt-[6.06rem] mq1350:pb-[6.06rem] mq1350:box-border">
         <div className="w-[64rem] flex flex-col items-center justify-start gap-[1.31rem] max-w-full shrink-0">
           <div className="relative leading-[150%] font-semibold mq450:text-[1.06rem] mq450:leading-[1.63rem]">
@@ -215,7 +217,7 @@ export default function Home() {
             </h1>
             <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[150%] font-normal font-inherit text-body mq450:text-[1.19rem] mq450:leading-[1.81rem]">
               If we wish to contact me for any software development jobs. Plz free free to contact me.</h3>
-            
+
           </div>
         </div>
         <div className="w-[64rem] flex flex-col items-center justify-start gap-[2rem] max-w-full shrink-0 text-left mq900:gap-[2rem]">
@@ -314,7 +316,7 @@ export default function Home() {
             </div>
           </button>
           <h3 className="m-0 self-stretch relative text-[1.5rem] leading-[150%] font-normal font-inherit text-body mq450:text-[1.19rem] mq450:leading-[1.81rem]">
-              If the form above doesn&apos;t work for any reason. Drop me your email in <Link href="mailto:rajan.tandukar@outlook.com">rajan.tandukar@outlook.com</Link></h3>
+            If the form above doesn&apos;t work for any reason. Drop me your email in <Link href="mailto:rajan.tandukar@outlook.com">rajan.tandukar@outlook.com</Link></h3>
         </div>
       </section>
       <footer className="self-stretch bg-bg-shade overflow-hidden flex flex-col items-center justify-start pt-[6.63rem] pb-[6.69rem] pr-[1.31rem] pl-[1.25rem] box-border gap-[6.69rem] max-w-full text-left text-[1.33rem] text-black font-body-02 mq450:gap-[6.69rem] mq450:pt-[4.31rem] mq450:pb-[4.38rem] mq450:box-border mq900:gap-[6.69rem]">
@@ -327,21 +329,21 @@ export default function Home() {
               src="/social-icon.svg"
             />
           </div>
-          <div className="flex-1 flex flex-row items-start justify-between py-[0rem] pr-[0.19rem] pl-[0rem] box-border min-w-[29.56rem] gap-[1.25rem] max-w-full z-[1] ml-[-0.75rem] mq900:flex-wrap mq900:min-w-full">
-            <Link href="/" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
+          <div className="flex flex-row items-start justify-between py-[0rem] pr-[0.19rem] pl-[0rem] box-border min-w-[29.56rem] gap-[.25rem] max-w-full z-[1] ml-[-0.75rem] mq900:flex-wrap mq900:min-w-full">
+            <Link href="/" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem] no-underline">
               Home
             </Link>
-            <Link href="#portfolio" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
+            <Link href="#portfolio" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem] no-underline">
               Portfolio
             </Link>
-            <Link href="#about" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">{`About me `}</Link>
-            <Link href="#contact" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
+            <Link href="#about" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem] no-underline">{`About me `}</Link>
+            <Link href="#contact" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem] no-underline">
               Contact
             </Link>
             {/* <Link href="#testimonials" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
               Testimonials
             </Link> */}
-            <Link href="#portfolio" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem]">
+            <Link href="#portfolio" className="relative leading-[150%] mq450:text-[1.06rem] mq450:leading-[1.63rem] no-underline">
               Portfolio
             </Link>
           </div>
