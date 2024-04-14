@@ -23,6 +23,8 @@ export default function Home() {
             </Link>
             <Link href="#about" className="h-[2rem] relative leading-[150%] inline-block shrink-0 whitespace-nowrap no-underline">About me
             </Link>
+            <Link href="#resume" className="h-[2rem] relative leading-[150%] inline-block shrink-0 whitespace-nowrap no-underline">Resume
+            </Link>
             {/* <Link href="#testimonials" className="h-[2rem] relative leading-[150%] inline-block shrink-0">Testimonials
             </Link> */}
           </div>
@@ -205,7 +207,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <section id="resume" className="self-stretch overflow-hidden flex flex-col items-center justify-start pt-[9.38rem] px-[1.25rem] pb-[9.31rem] box-border gap-[4rem] max-w-full text-center text-[1.33rem] text-heading-color font-body-02 mq900:gap-[4rem] mq900:pt-[3.94rem] mq900:pb-[3.94rem] mq900:box-border mq1350:gap-[4rem] mq1350:pt-[6.06rem] mq1350:pb-[6.06rem] mq1350:box-border">
+        <div className="relative leading-[150%] font-semibold mq450:text-[1.06rem] mq450:leading-[1.63rem] w-full max-w-screen">
+         My resume
+          <h1 className="m-0 relative text-[4rem] leading-[120%] font-bold font-inherit text-left mq450:text-[2.38rem] mq450:leading-[2.88rem] mq900:text-[3.19rem] mq900:leading-[3.81rem]">
+            Resume
+          </h1>
+          <embed src="/Rajan_Resume.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </section>
       <section id="contact" className="self-stretch overflow-hidden flex flex-col items-center justify-start pt-[9.38rem] px-[1.25rem] pb-[9.31rem] box-border gap-[4rem] max-w-full text-center text-[1.33rem] text-heading-color font-body-02 mq900:gap-[4rem] mq900:pt-[3.94rem] mq900:pb-[3.94rem] mq900:box-border mq1350:gap-[4rem] mq1350:pt-[6.06rem] mq1350:pb-[6.06rem] mq1350:box-border">
         <div className="w-[64rem] flex flex-col items-center justify-start gap-[1.31rem] max-w-full shrink-0">
           <div className="relative leading-[150%] font-semibold mq450:text-[1.06rem] mq450:leading-[1.63rem]">
