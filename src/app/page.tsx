@@ -91,34 +91,34 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
-      <div className="min-h-screen bg-gradient-to-br from-dark-50 to-white">
+      <div className="min-h-screen bg-dark-900">
       {/* Modern Navigation */}
       <motion.header 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-dark-200 z-50"
+        className="fixed top-0 w-full bg-dark-800/90 backdrop-blur-lg border-b border-dark-200 z-50"
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-2xl font-bold text-dark-800"
+            className="text-2xl font-bold text-white"
           >
-            Rajan<span className="text-primary-600">.</span>
+            Rajan<span className="text-neon-green neon-glow">.</span>
           </motion.div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-dark-600 hover:text-primary-600 transition-colors">About</Link>
-            <Link href="#skills" className="text-dark-600 hover:text-primary-600 transition-colors">Skills</Link>
-            <Link href="#projects" className="text-dark-600 hover:text-primary-600 transition-colors">Projects</Link>
-            <Link href="#contact" className="text-dark-600 hover:text-primary-600 transition-colors">Contact</Link>
+            <Link href="#about" className="text-dark-500 hover:text-neon-green transition-colors">About</Link>
+            <Link href="#skills" className="text-dark-500 hover:text-neon-green transition-colors">Skills</Link>
+            <Link href="#projects" className="text-dark-500 hover:text-neon-green transition-colors">Projects</Link>
+            <Link href="#contact" className="text-dark-500 hover:text-neon-green transition-colors">Contact</Link>
           </nav>
           
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors"
+            className="bg-neon-green text-dark-900 px-6 py-2 rounded-full hover:bg-primary-500 transition-all neon-border font-semibold"
           >
             Get In Touch
           </motion.a>
@@ -137,7 +137,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="inline-flex items-center px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-6"
+                className="inline-flex items-center px-4 py-2 bg-dark-100 text-neon-green border border-neon-green/30 rounded-full text-sm font-medium mb-6"
               >
                 <Zap className="w-4 h-4 mr-2" />
                 Senior Full Stack Developer
@@ -147,17 +147,17 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-5xl lg:text-6xl font-bold text-dark-800 mb-6 leading-tight"
+                className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               >
                 Building Full Stack
-                <span className="text-primary-600 block">Solutions</span>
+                <span className="text-neon-green neon-glow block">Solutions</span>
               </motion.h1>
               
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="text-xl text-dark-600 mb-8 leading-relaxed"
+                className="text-xl text-dark-500 mb-8 leading-relaxed"
               >
                 I&apos;m Rajan Tandukar, a passionate full-stack developer and tech lead specializing in 
                 building robust backend systems and modern frontend applications with React, Next.js, and Angular.
@@ -173,7 +173,7 @@ export default function Home() {
                   href="#projects"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors"
+                  className="inline-flex items-center px-8 py-4 bg-neon-green text-dark-900 rounded-xl font-semibold hover:bg-primary-500 transition-all neon-border"
                 >
                   <Code2 className="w-5 h-5 mr-2" />
                   View My Work
@@ -184,7 +184,7 @@ export default function Home() {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 border-2 border-dark-300 text-dark-700 rounded-xl font-semibold hover:bg-dark-50 transition-colors"
+                  className="inline-flex items-center px-8 py-4 border-2 border-neon-green/50 text-neon-green rounded-xl font-semibold hover:bg-dark-100 transition-colors"
                 >
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
@@ -202,7 +202,7 @@ export default function Home() {
                 <img
                   src="/rajan.jpeg"
                   alt="Rajan Tandukar"
-                  className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+                  className="w-full max-w-md mx-auto rounded-2xl shadow-2xl border-2 border-neon-green/20"
                 />
               </div>
               
@@ -210,25 +210,25 @@ export default function Home() {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg"
+                className="absolute -top-4 -left-4 bg-dark-100 p-4 rounded-xl shadow-lg border border-neon-green/30"
               >
-                <Server className="w-8 h-8 text-primary-600" />
+                <Server className="w-8 h-8 text-neon-green" />
               </motion.div>
               
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-                className="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg"
+                className="absolute -bottom-4 -right-4 bg-dark-100 p-4 rounded-xl shadow-lg border border-primary-500/30"
               >
-                <Database className="w-8 h-8 text-accent-green" />
+                <Database className="w-8 h-8 text-primary-500" />
               </motion.div>
               
               <motion.div
                 animate={{ y: [-5, 15, -5] }}
                 transition={{ duration: 4, repeat: Infinity, delay: 2 }}
-                className="absolute top-1/2 -right-8 bg-white p-4 rounded-xl shadow-lg"
+                className="absolute top-1/2 -right-8 bg-dark-100 p-4 rounded-xl shadow-lg border border-accent-cyan/30"
               >
-                <Cloud className="w-8 h-8 text-accent-blue" />
+                <Cloud className="w-8 h-8 text-accent-cyan" />
               </motion.div>
             </motion.div>
           </div>
@@ -240,11 +240,11 @@ export default function Home() {
           transition={{ duration: 2, repeat: Infinity }}
           className="flex justify-center mt-16"
         >
-          <ChevronDown className="w-6 h-6 text-dark-400" />
+          <ChevronDown className="w-6 h-6 text-neon-green" />
         </motion.div>
       </section>
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 bg-dark-50">
+      <section id="skills" className="py-20 px-6 bg-dark-800">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -252,10 +252,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-dark-800 mb-6">
-              Full Stack Expertise
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Full Stack <span className="text-neon-green neon-glow">Expertise</span>
             </h2>
-            <p className="text-xl text-dark-600 max-w-3xl mx-auto">
+            <p className="text-xl text-dark-500 max-w-3xl mx-auto">
               Specialized in building end-to-end solutions with robust backend systems and modern frontend applications
             </p>
           </motion.div>
@@ -335,8 +335,8 @@ export default function Home() {
                   alt="Rajan Tandukar"
                   className="w-full max-w-lg rounded-2xl shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-6 rounded-xl shadow-lg">
-                  <div className="text-2xl font-bold">8+</div>
+                <div className="absolute -bottom-6 -right-6 bg-neon-green text-dark-900 p-6 rounded-xl shadow-lg neon-border">
+                  <div className="text-2xl font-bold">12+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
               </div>
@@ -355,7 +355,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                  className="inline-flex items-center px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-4"
+                  className="inline-flex items-center px-4 py-2 bg-dark-100 text-neon-green border border-neon-green/30 rounded-full text-sm font-medium mb-4"
                 >
                   About Me
                 </motion.div>
@@ -365,10 +365,10 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
-                  className="text-4xl lg:text-5xl font-bold text-dark-800 mb-6"
+                  className="text-4xl lg:text-5xl font-bold text-white mb-6"
                 >
                   Passionate About Building
-                  <span className="text-primary-600 block">Scalable Solutions</span>
+                  <span className="text-neon-green neon-glow block">Scalable Solutions</span>
                 </motion.h2>
               </div>
               
@@ -377,7 +377,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.6 }}
-                className="space-y-4 text-lg text-dark-600 leading-relaxed"
+                className="space-y-4 text-lg text-dark-500 leading-relaxed"
               >
                 <p>
                   With over 8 years of experience in backend development and technical leadership, 
@@ -403,13 +403,13 @@ export default function Home() {
                 transition={{ delay: 0.8 }}
                 className="grid grid-cols-2 gap-6 pt-6"
               >
-                <div className="text-center p-4 bg-dark-50 rounded-xl">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">50+</div>
-                  <div className="text-dark-600">Projects Completed</div>
+                <div className="text-center p-4 bg-dark-100 rounded-xl border border-neon-green/20">
+                  <div className="text-3xl font-bold text-neon-green mb-2">50+</div>
+                  <div className="text-dark-500">Projects Completed</div>
                 </div>
-                <div className="text-center p-4 bg-dark-50 rounded-xl">
-                  <div className="text-3xl font-bold text-primary-600 mb-2">15+</div>
-                  <div className="text-dark-600">Technologies Mastered</div>
+                <div className="text-center p-4 bg-dark-100 rounded-xl border border-neon-green/20">
+                  <div className="text-3xl font-bold text-neon-green mb-2">15+</div>
+                  <div className="text-dark-500">Technologies Mastered</div>
                 </div>
               </motion.div>
             </motion.div>
@@ -417,7 +417,7 @@ export default function Home() {
         </div>
       </section>
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-dark-50">
+      <section id="projects" className="py-20 px-6 bg-dark-900">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -425,10 +425,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-dark-800 mb-6">
-              Featured Projects
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Featured <span className="text-neon-green neon-glow">Projects</span>
             </h2>
-            <p className="text-xl text-dark-600 max-w-3xl mx-auto">
+            <p className="text-xl text-dark-500 max-w-3xl mx-auto">
               Showcase of backend systems and applications I&apos;ve architected and developed
             </p>
           </motion.div>
@@ -491,7 +491,7 @@ export default function Home() {
               href="https://github.com/mystikraz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-neon-green text-dark-900 rounded-xl font-semibold hover:bg-primary-500 transition-all neon-border"
             >
               <Github className="w-5 h-5 mr-2" />
               View All Projects
@@ -508,10 +508,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-dark-800 mb-6">
-              My Resume
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              My <span className="text-neon-green neon-glow">Resume</span>
             </h2>
-            <p className="text-xl text-dark-600 mb-8">
+            <p className="text-xl text-dark-500 mb-8">
               Download my complete resume to learn more about my experience and qualifications
             </p>
             
@@ -520,7 +520,7 @@ export default function Home() {
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-neon-green text-dark-900 rounded-xl font-semibold hover:bg-primary-500 transition-all neon-border"
             >
               <Download className="w-5 h-5 mr-2" />
               Download Resume
@@ -532,7 +532,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-lg p-2"
+            className="bg-dark-100 rounded-2xl shadow-lg p-2 border border-neon-green/20"
           >
             <embed 
               src="/Rajan_Resume.pdf" 
@@ -545,7 +545,7 @@ export default function Home() {
         </div>
       </section>
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-dark-50">
+      <section id="contact" className="py-20 px-6 bg-dark-800">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -553,10 +553,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold text-dark-800 mb-6">
-              Let&apos;s Work Together
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Let&apos;s Work <span className="text-neon-green neon-glow">Together</span>
             </h2>
-            <p className="text-xl text-dark-600 max-w-3xl mx-auto">
+            <p className="text-xl text-dark-500 max-w-3xl mx-auto">
               Ready to build something amazing? I&apos;m always interested in discussing new opportunities and challenging projects.
             </p>
           </motion.div>
@@ -570,8 +570,8 @@ export default function Home() {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-2xl font-bold text-dark-800 mb-6">Get in Touch</h3>
-                <p className="text-dark-600 mb-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+                <p className="text-dark-500 mb-8">
                   I&apos;m currently available for backend development projects, technical leadership roles, 
                   and consulting opportunities. Let&apos;s discuss how I can help bring your ideas to life.
                 </p>
@@ -579,16 +579,16 @@ export default function Home() {
 
               <div className="space-y-6">
                 <motion.a
-                  href="mailto:rajan.tandukar@outlook.com"
+                  href="mailto:royal_raj@outlook.com"
                   whileHover={{ x: 5 }}
-                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center p-4 bg-dark-100 rounded-xl shadow-sm hover:shadow-md transition-all border border-dark-200 hover:border-neon-green/50"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                    <Mail className="w-6 h-6 text-primary-600" />
+                  <div className="w-12 h-12 bg-dark-200 rounded-lg flex items-center justify-center mr-4 border border-neon-green/30">
+                    <Mail className="w-6 h-6 text-neon-green" />
                   </div>
                   <div>
-                    <div className="font-semibold text-dark-800">Email</div>
-                    <div className="text-dark-600">rajan.tandukar@outlook.com</div>
+                    <div className="font-semibold text-white">Email</div>
+                    <div className="text-dark-500">rajan.tandukar@outlook.com</div>
                   </div>
                 </motion.a>
 
@@ -597,14 +597,14 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 5 }}
-                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center p-4 bg-dark-100 rounded-xl shadow-sm hover:shadow-md transition-all border border-dark-200 hover:border-neon-green/50"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                    <Linkedin className="w-6 h-6 text-primary-600" />
+                  <div className="w-12 h-12 bg-dark-200 rounded-lg flex items-center justify-center mr-4 border border-neon-green/30">
+                    <Linkedin className="w-6 h-6 text-neon-green" />
                   </div>
                   <div>
-                    <div className="font-semibold text-dark-800">LinkedIn</div>
-                    <div className="text-dark-600">Connect with me</div>
+                    <div className="font-semibold text-white">LinkedIn</div>
+                    <div className="text-dark-500">Connect with me</div>
                   </div>
                 </motion.a>
 
@@ -613,14 +613,14 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 5 }}
-                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center p-4 bg-dark-100 rounded-xl shadow-sm hover:shadow-md transition-all border border-dark-200 hover:border-neon-green/50"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                    <Github className="w-6 h-6 text-primary-600" />
+                  <div className="w-12 h-12 bg-dark-200 rounded-lg flex items-center justify-center mr-4 border border-neon-green/30">
+                    <Github className="w-6 h-6 text-neon-green" />
                   </div>
                   <div>
-                    <div className="font-semibold text-dark-800">GitHub</div>
-                    <div className="text-dark-600">View my repositories</div>
+                    <div className="font-semibold text-white">GitHub</div>
+                    <div className="text-dark-500">View my repositories</div>
                   </div>
                 </motion.a>
               </div>
@@ -637,10 +637,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Brand */}
             <div className="lg:col-span-2">
-              <div className="text-2xl font-bold mb-4">
-                Rajan<span className="text-primary-400">.</span>
+              <div className="text-2xl font-bold mb-4 text-white">
+                Rajan<span className="text-neon-green neon-glow">.</span>
               </div>
-              <p className="text-dark-300 mb-6 max-w-md">
+              <p className="text-dark-500 mb-6 max-w-md">
                 Senior Backend Developer & Tech Lead passionate about building scalable, 
                 robust systems that power modern applications.
               </p>
@@ -651,9 +651,9 @@ export default function Home() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 bg-dark-700 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                  className="w-10 h-10 bg-dark-200 rounded-lg flex items-center justify-center hover:bg-neon-green hover:text-dark-900 transition-colors border border-neon-green/30"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-neon-green" />
                 </motion.a>
                 
                 <motion.a
@@ -662,43 +662,43 @@ export default function Home() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 bg-dark-700 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                  className="w-10 h-10 bg-dark-200 rounded-lg flex items-center justify-center hover:bg-neon-green hover:text-dark-900 transition-colors border border-neon-green/30"
                 >
-                  <Github className="w-5 h-5" />
+                  <Github className="w-5 h-5 text-neon-green" />
                 </motion.a>
                 
                 <motion.a
                   href="mailto:rajan.tandukar@outlook.com"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 bg-dark-700 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
+                  className="w-10 h-10 bg-dark-200 rounded-lg flex items-center justify-center hover:bg-neon-green hover:text-dark-900 transition-colors border border-neon-green/30"
                 >
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-5 h-5 text-neon-green" />
                 </motion.a>
               </div>
             </div>
             
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#about" className="text-dark-300 hover:text-white transition-colors">
+                  <Link href="#about" className="text-dark-500 hover:text-neon-green transition-colors">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#skills" className="text-dark-300 hover:text-white transition-colors">
+                  <Link href="#skills" className="text-dark-500 hover:text-neon-green transition-colors">
                     Skills
                   </Link>
                 </li>
                 <li>
-                  <Link href="#projects" className="text-dark-300 hover:text-white transition-colors">
+                  <Link href="#projects" className="text-dark-500 hover:text-neon-green transition-colors">
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-dark-300 hover:text-white transition-colors">
+                  <Link href="#contact" className="text-dark-500 hover:text-neon-green transition-colors">
                     Contact
                   </Link>
                 </li>
@@ -707,8 +707,8 @@ export default function Home() {
             
             {/* Services */}
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-dark-300">
+              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <ul className="space-y-2 text-dark-500">
                 <li>Backend Development</li>
                 <li>API Design</li>
                 <li>Cloud Architecture</li>
@@ -720,11 +720,11 @@ export default function Home() {
           
           {/* Bottom */}
           <div className="border-t border-dark-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <div className="text-dark-300 mb-4 md:mb-0">
+            <div className="text-dark-500 mb-4 md:mb-0">
               © 2024 Rajan Tandukar. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm text-dark-300">
-              <Link href="/Rajan_Resume.pdf" target="_blank" className="hover:text-white transition-colors">
+            <div className="flex space-x-6 text-sm text-dark-500">
+              <Link href="/Rajan_Resume.pdf" target="_blank" className="hover:text-neon-green transition-colors">
                 Resume
               </Link>
               <span>•</span>

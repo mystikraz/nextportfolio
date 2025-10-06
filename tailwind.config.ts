@@ -13,41 +13,49 @@ const config: Config = {
         white: "#ffffff",
         black: "#000000",
         
-        // Primary brand colors for backend developer
+        // Neon Green Primary Colors (Dark Theme)
         primary: {
-          50: "#f0f9ff",
-          100: "#e0f2fe",
-          200: "#bae6fd",
-          300: "#7dd3fc",
-          400: "#38bdf8",
-          500: "#0ea5e9",
-          600: "#0284c7",
-          700: "#0369a1",
-          800: "#075985",
-          900: "#0c4a6e",
+          50: "#f0fdf4",
+          100: "#dcfce7",
+          200: "#bbf7d0",
+          300: "#86efac",
+          400: "#4ade80",
+          500: "#22c55e",  // Main neon green
+          600: "#16a34a",
+          700: "#15803d",
+          800: "#166534",
+          900: "#14532d",
         },
         
-        // Dark theme colors
+        // Neon accent (brighter green for highlights)
+        neon: {
+          green: "#39ff14",  // Bright neon green
+          glow: "#00ff41",   // Neon glow effect
+          dark: "#0d9488",   // Darker teal-green
+        },
+        
+        // Dark theme colors (darker backgrounds)
         dark: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
+          50: "#18181b",   // Lighter dark
+          100: "#27272a",  // Card backgrounds
+          200: "#3f3f46",  // Borders
+          300: "#52525b",  // Disabled
+          400: "#71717a",  // Muted text
+          500: "#a1a1aa",  // Secondary text
+          600: "#d4d4d8",  // Primary text
+          700: "#e4e4e7",  // Headings
+          800: "#09090b",  // Main background
+          900: "#000000",  // Deepest black
         },
         
-        // Accent colors for backend technologies
+        // Accent colors for technologies
         accent: {
-          green: "#10b981",
+          green: "#22c55e",
           blue: "#3b82f6",
-          purple: "#8b5cf6",
+          purple: "#a855f7",
           orange: "#f59e0b",
           red: "#ef4444",
+          cyan: "#06b6d4",
         },
         
         // Legacy colors for compatibility

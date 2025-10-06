@@ -72,12 +72,12 @@ export default function ContactForm() {
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-2xl shadow-lg p-8"
+      className="bg-dark-100 rounded-2xl shadow-lg p-8 border border-dark-200"
     >
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-semibold text-dark-700 mb-2">
+            <label className="block text-sm font-semibold text-dark-600 mb-2">
               First Name *
             </label>
             <input
@@ -86,12 +86,12 @@ export default function ContactForm() {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
+              className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors"
               placeholder="John"
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-dark-700 mb-2">
+            <label className="block text-sm font-semibold text-dark-600 mb-2">
               Last Name *
             </label>
             <input
@@ -100,7 +100,7 @@ export default function ContactForm() {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
+              className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors"
               placeholder="Doe"
             />
           </div>
@@ -108,7 +108,7 @@ export default function ContactForm() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-semibold text-dark-700 mb-2">
+            <label className="block text-sm font-semibold text-dark-600 mb-2">
               Email *
             </label>
             <input
@@ -117,12 +117,12 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
+              className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors"
               placeholder="john@example.com"
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-dark-700 mb-2">
+            <label className="block text-sm font-semibold text-dark-600 mb-2">
               Phone
             </label>
             <input
@@ -130,21 +130,21 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
+              className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors"
               placeholder="+1 (555) 123-4567"
             />
           </div>
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-dark-700 mb-2">
+          <label className="block text-sm font-semibold text-dark-600 mb-2">
             Project Type
           </label>
           <select 
             name="projectType"
             value={formData.projectType}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
+            className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors"
           >
             <option>Backend Development</option>
             <option>Frontend Development</option>
@@ -158,7 +158,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-dark-700 mb-2">
+          <label className="block text-sm font-semibold text-dark-600 mb-2">
             Message *
           </label>
           <textarea
@@ -167,19 +167,19 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors resize-none"
+            className="w-full px-4 py-3 bg-dark-200 border border-dark-300 text-white rounded-lg focus:ring-2 focus:ring-neon-green focus:border-neon-green outline-none transition-colors resize-none"
             placeholder="Tell me about your project..."
           />
         </div>
 
         {submitStatus === 'success' && (
-          <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+          <div className="p-4 bg-neon-green/10 border border-neon-green/30 rounded-lg text-neon-green">
             ✅ Message sent successfully! I&apos;ll get back to you soon.
           </div>
         )}
 
         {submitStatus === 'error' && (
-          <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+          <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400">
             ❌ Failed to send message. Please try again or email me directly at royal_raj@outlook.com
           </div>
         )}
@@ -189,7 +189,7 @@ export default function ContactForm() {
           disabled={isSubmitting}
           whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
           whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-          className="w-full bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-neon-green text-dark-900 py-4 rounded-lg font-semibold hover:bg-primary-500 transition-all neon-border disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </motion.button>

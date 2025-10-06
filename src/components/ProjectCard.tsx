@@ -35,17 +35,17 @@ export default function ProjectCard({
       transition={{ duration: 0.5, delay }}
       className="group relative"
     >
-      <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl border border-gray-100">
+      <div className="relative overflow-hidden rounded-2xl bg-dark-100 shadow-lg transition-all duration-300 hover:shadow-2xl border border-dark-200 hover:border-neon-green/50">
         {/* Project Image/Placeholder */}
-        <div className="relative h-48 bg-gradient-to-br from-primary-500 to-primary-700 overflow-hidden">
+        <div className="relative h-48 bg-gradient-to-br from-dark-200 to-dark-100 overflow-hidden border-b border-neon-green/20">
           {image ? (
             <img src={image} alt={title} className="w-full h-full object-cover" />
           ) : (
             <div className="flex items-center justify-center h-full">
               <div className="flex space-x-4 opacity-20">
-                <Server className="w-12 h-12 text-white" />
-                <Database className="w-12 h-12 text-white" />
-                <Cloud className="w-12 h-12 text-white" />
+                <Server className="w-12 h-12 text-neon-green" />
+                <Database className="w-12 h-12 text-neon-green" />
+                <Cloud className="w-12 h-12 text-neon-green" />
               </div>
             </div>
           )}
@@ -57,9 +57,9 @@ export default function ProjectCard({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                className="p-3 bg-neon-green rounded-full hover:bg-primary-500 transition-colors"
               >
-                <Github className="w-5 h-5 text-dark-800" />
+                <Github className="w-5 h-5 text-dark-900" />
               </a>
             )}
             {liveUrl && (
@@ -67,9 +67,9 @@ export default function ProjectCard({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                className="p-3 bg-neon-green rounded-full hover:bg-primary-500 transition-colors"
               >
-                <ExternalLink className="w-5 h-5 text-dark-800" />
+                <ExternalLink className="w-5 h-5 text-dark-900" />
               </a>
             )}
           </div>
@@ -77,17 +77,17 @@ export default function ProjectCard({
         
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-bold text-dark-800 mb-3 group-hover:text-primary-600 transition-colors">
+          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-green transition-colors">
             {title}
           </h3>
           
-          <p className="text-dark-600 mb-4 leading-relaxed">
+          <p className="text-dark-500 mb-4 leading-relaxed">
             {description}
           </p>
           
           {/* Tech Stack */}
           <div className="mb-4">
-            <h4 className="text-sm font-semibold text-dark-700 mb-2 flex items-center">
+            <h4 className="text-sm font-semibold text-dark-600 mb-2 flex items-center">
               <Server className="w-4 h-4 mr-2" />
               Tech Stack
             </h4>
@@ -95,7 +95,7 @@ export default function ProjectCard({
               {techStack.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-2 py-1 text-xs bg-accent-blue bg-opacity-10 text-accent-blue rounded-md border border-accent-blue border-opacity-20"
+                  className="px-2 py-1 text-xs bg-accent-blue/10 text-accent-blue rounded-md border border-accent-blue/30"
                 >
                   {tech}
                 </span>
@@ -105,7 +105,7 @@ export default function ProjectCard({
           
           {/* Architecture */}
           <div className="mb-4">
-            <h4 className="text-sm font-semibold text-dark-700 mb-2 flex items-center">
+            <h4 className="text-sm font-semibold text-dark-600 mb-2 flex items-center">
               <Database className="w-4 h-4 mr-2" />
               Architecture
             </h4>
@@ -113,7 +113,7 @@ export default function ProjectCard({
               {architecture.map((arch, index) => (
                 <span
                   key={index}
-                  className="px-2 py-1 text-xs bg-accent-green bg-opacity-10 text-accent-green rounded-md border border-accent-green border-opacity-20"
+                  className="px-2 py-1 text-xs bg-primary-500/10 text-primary-500 rounded-md border border-primary-500/30"
                 >
                   {arch}
                 </span>
@@ -123,14 +123,14 @@ export default function ProjectCard({
           
           {/* Key Features */}
           <div>
-            <h4 className="text-sm font-semibold text-dark-700 mb-2 flex items-center">
+            <h4 className="text-sm font-semibold text-dark-600 mb-2 flex items-center">
               <Cloud className="w-4 h-4 mr-2" />
               Key Features
             </h4>
             <ul className="space-y-1">
               {features.slice(0, 3).map((feature, index) => (
-                <li key={index} className="text-sm text-dark-600 flex items-center">
-                  <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-2" />
+                <li key={index} className="text-sm text-dark-500 flex items-center">
+                  <div className="w-1.5 h-1.5 bg-neon-green rounded-full mr-2" />
                   {feature}
                 </li>
               ))}

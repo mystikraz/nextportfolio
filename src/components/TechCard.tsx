@@ -30,28 +30,27 @@ export default function TechCard({
       whileHover={{ y: -5 }}
       className="group relative"
     >
-      <div className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-2xl border border-gray-100">
+      <div className="relative overflow-hidden rounded-2xl bg-dark-100 p-8 shadow-lg transition-all duration-300 hover:shadow-2xl border border-dark-200 hover:border-neon-green/50">
         {/* Background gradient on hover */}
         <div className={cn(
-          "absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-5",
+          "absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-10",
           gradient
         )} />
         
         {/* Icon */}
         <div className={cn(
-          "inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 transition-all duration-300",
-          gradient,
-          "group-hover:scale-110"
+          "inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 transition-all duration-300 bg-dark-200 border border-neon-green/30",
+          "group-hover:scale-110 group-hover:border-neon-green"
         )}>
-          <Icon className="w-8 h-8 text-white" />
+          <Icon className="w-8 h-8 text-neon-green" />
         </div>
         
         {/* Content */}
-        <h3 className="text-xl font-bold text-dark-800 mb-3 group-hover:text-primary-600 transition-colors">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-green transition-colors">
           {title}
         </h3>
         
-        <p className="text-dark-600 mb-6 leading-relaxed">
+        <p className="text-dark-500 mb-6 leading-relaxed">
           {description}
         </p>
         
@@ -60,7 +59,7 @@ export default function TechCard({
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 text-sm bg-dark-50 text-dark-700 rounded-full border border-dark-200 transition-colors group-hover:bg-primary-50 group-hover:text-primary-700 group-hover:border-primary-200"
+              className="px-3 py-1 text-sm bg-dark-200 text-dark-600 rounded-full border border-dark-300 transition-colors group-hover:bg-neon-green/10 group-hover:text-neon-green group-hover:border-neon-green/50"
             >
               {tech}
             </span>
