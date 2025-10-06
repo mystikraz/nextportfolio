@@ -22,11 +22,76 @@ import {
 import Link from "next/link";
 import TechCard from "@/components/TechCard";
 import ProjectCard from "@/components/ProjectCard";
-import CardFormInputs from "@/components/CardFormInputs";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
+  // Structured Data for SEO (JSON-LD)
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rajan Tandukar",
+    "jobTitle": "Senior Full Stack Developer & Tech Lead",
+    "description": "Senior Full Stack Developer & Tech Lead specializing in scalable backend systems and modern frontend applications",
+    "url": "https://rajantandukar.com",
+    "image": "https://rajantandukar.com/rajan.jpeg",
+    "email": "rajan.tandukar@outlook.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/rajan-tandukar-a8385220/",
+      "https://github.com/mystikraz"
+    ],
+    "knowsAbout": [
+      "ASP.NET Core",
+      "Node.js",
+      "React",
+      "Next.js",
+      "Angular",
+      "TypeScript",
+      "Cloud Architecture",
+      "AWS",
+      "Azure",
+      "Microservices",
+      "API Development",
+      "DevOps",
+      "CI/CD",
+      "Database Design",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Docker",
+      "Kubernetes"
+    ],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Your University" // Update with your actual education
+    },
+    "workExample": [
+      {
+        "@type": "CreativeWork",
+        "name": "E-Commerce Microservices Platform",
+        "description": "Scalable microservices architecture for a high-traffic e-commerce platform"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Real-time Analytics API",
+        "description": "High-performance analytics API processing millions of events per day"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Multi-tenant SaaS Platform",
+        "description": "Enterprise SaaS platform with multi-tenancy and RBAC"
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-50 to-white">
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-br from-dark-50 to-white">
       {/* Modern Navigation */}
       <motion.header 
         initial={{ y: -100 }}
@@ -562,94 +627,7 @@ export default function Home() {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-lg p-8"
-            >
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-dark-700 mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-dark-700 mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-dark-700 mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-dark-700 mb-2">
-                      Phone
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors"
-                      placeholder="+1 (555) 123-4567"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-dark-700 mb-2">
-                    Project Type
-                  </label>
-                  <select className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors">
-                    <option>Backend Development</option>
-                    <option>API Design & Development</option>
-                    <option>Cloud Architecture</option>
-                    <option>Technical Leadership</option>
-                    <option>Consulting</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-dark-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    rows={6}
-                    className="w-full px-4 py-3 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-colors resize-none"
-                    placeholder="Tell me about your project..."
-                  />
-                </div>
-
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full bg-primary-600 text-white py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-                >
-                  Send Message
-                </motion.button>
-              </form>
-            </motion.div>
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -757,6 +735,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }

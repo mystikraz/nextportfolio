@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import sgMail from '@sendgrid/mail';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize SendGrid
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 async function sendEmail(formData: any) {
   try {
-    const { data, error } = await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>', // Resend verified domain
-      to: ['royal_raj@outlook.com'],
+    const msg = {
+      to: process.env.CONTACT_EMAIL || 'royal_raj@outlook.com',
+      from: process.env.SENDGRID_FROM_EMAIL || 'royal_raj@outlook.com', // Must be verified in SendGrid
       subject: `New Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -48,17 +49,13 @@ ${formData.message}
 This message was sent from your portfolio contact form.
       `,
       replyTo: formData.email, // Allow you to reply directly to the sender
-    });
+    };
 
-    if (error) {
-      console.error('Resend error:', error);
-      throw new Error('Failed to send email via Resend');
-    }
-
-    console.log('✅ Email sent successfully:', data);
+    await sgMail.send(msg);
+    console.log('✅ Email sent successfully via SendGrid');
     return true;
   } catch (error) {
-    console.error('Email sending error:', error);
+    console.error('SendGrid error:', error);
     throw error;
   }
 }
