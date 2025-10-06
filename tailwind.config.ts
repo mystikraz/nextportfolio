@@ -9,33 +9,68 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        white: "#fff",
-        primary: "#5e3bee",
+        // Base colors
+        white: "#ffffff",
+        black: "#000000",
+        
+        // Primary brand colors for backend developer
+        primary: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
+        },
+        
+        // Dark theme colors
+        dark: {
+          50: "#f8fafc",
+          100: "#f1f5f9",
+          200: "#e2e8f0",
+          300: "#cbd5e1",
+          400: "#94a3b8",
+          500: "#64748b",
+          600: "#475569",
+          700: "#334155",
+          800: "#1e293b",
+          900: "#0f172a",
+        },
+        
+        // Accent colors for backend technologies
+        accent: {
+          green: "#10b981",
+          blue: "#3b82f6",
+          purple: "#8b5cf6",
+          orange: "#f59e0b",
+          red: "#ef4444",
+        },
+        
+        // Legacy colors for compatibility
+        "heading-color": "#1e293b",
+        "bg-shade": "#f8fafc",
+        body: "#475569",
+        dimgray: "#64748b",
+        
+        // Keep some existing colors for backwards compatibility
         mediumslateblue: {
-          "100": "#8561ff",
-          "200": "rgba(133, 97, 255, 0.09)",
+          "100": "#8b5cf6",
+          "200": "rgba(139, 92, 246, 0.09)",
         },
         gray: {
-          "100": "#232536",
-          "200": "rgba(40, 41, 56, 0.55)",
-          "300": "rgba(35, 37, 54, 0.12)",
-          "400": "rgba(35, 37, 54, 0.5)",
+          "100": "#1e293b",
+          "200": "rgba(30, 41, 59, 0.55)",
+          "300": "rgba(30, 41, 59, 0.12)",
+          "400": "rgba(30, 41, 59, 0.5)",
         },
-        "heading-color": "#282938",
-        "bg-shade": "#f5fcff",
-        dribble: "#e62872",
-        body: "#1c1e53",
-        black: "#000",
-        aliceblue: "#eef4fa",
-        "dark-scale-dark-400": "#111218",
-        dimgray: "#505050",
-        darkslategray: "#033333",
-        teal: "#006b6a",
         deeppink: {
-          "100": "#ff428c",
-          "200": "#e62971",
+          "100": "#ec4899",
+          "200": "#db2777",
         },
-        mediumpurple: "#a58eff",
       },
       spacing: {},
       fontFamily: {

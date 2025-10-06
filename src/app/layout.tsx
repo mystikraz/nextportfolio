@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rajan Tandukar",
-  description: "A sofware developer with expertise in C#, Typescript, React,Aws, Nextjs and.NET.",
+  title: "Rajan Tandukar - Full Stack Developer",
+  description: "Senior Full Stack Developer & Tech Lead specializing in scalable backend systems and modern frontend applications. Expert in .NET, Node.js, React, Next.js, Angular, and cloud technologies.",
 };
 
 export default function RootLayout({
