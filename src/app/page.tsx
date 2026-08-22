@@ -17,7 +17,8 @@ import {
   Download,
   ChevronDown,
   Monitor,
-  Smartphone
+  Smartphone,
+  Brain
 } from "lucide-react";
 import Link from "next/link";
 import TechCard from "@/components/TechCard";
@@ -30,8 +31,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Rajan Tandukar",
-    "jobTitle": "Senior Full Stack Developer & Tech Lead",
-    "description": "Senior Full Stack Developer & Tech Lead specializing in scalable backend systems and modern frontend applications",
+    "jobTitle": "Tech Lead & Principal Engineer",
+    "description": "Tech Lead & Principal Engineer with 13+ years of experience specializing in full-stack development, cloud architecture, microservices, AI engineering with LangChain, RAG, vector databases, and technical team leadership",
     "url": "https://rajantandukar.com",
     "image": "https://rajantandukar.com/rajan.jpeg",
     "email": "rajan.tandukar@outlook.com",
@@ -58,7 +59,39 @@ export default function Home() {
       "MongoDB",
       "Redis",
       "Docker",
-      "Kubernetes"
+      "Kubernetes",
+      "AI Engineering",
+      "LLM (Large Language Models)",
+      "LangChain",
+      "LangSmith",
+      "Agents",
+      "Tool Calling",
+      "Function Calling",
+      "Agentic Workflows",
+      "Model Orchestration",
+      "RAG (Retrieval Augmented Generation)",
+      "Vector Databases",
+      "Semantic Search",
+      "Hybrid Search",
+      "Embeddings",
+      "Prompt Engineering",
+      "Pinecone",
+      "Weaviate",
+      "Milvus",
+      "OpenAI API",
+      "Claude API",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "Jupyter",
+      "FastAPI",
+      "Flask",
+      "Machine Learning",
+      "Data Pipeline",
+      "NLP"
     ],
     "alumniOf": {
       "@type": "Organization",
@@ -79,6 +112,11 @@ export default function Home() {
         "@type": "CreativeWork",
         "name": "Multi-tenant SaaS Platform",
         "description": "Enterprise SaaS platform with multi-tenancy and RBAC"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "AI-Powered Intelligent Document Processing Platform",
+        "description": "RAG-based document processing system using vector databases, semantic search, and LLMs"
       }
     ]
   };
@@ -125,7 +163,7 @@ export default function Home() {
         </div>
       </motion.header>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6" aria-label="Hero section - Tech Lead and Principal Engineer introduction">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -140,7 +178,7 @@ export default function Home() {
                 className="inline-flex items-center px-4 py-2 bg-dark-100 text-neon-green border border-neon-green/30 rounded-full text-sm font-medium mb-6"
               >
                 <Zap className="w-4 h-4 mr-2" />
-                Senior Full Stack Developer
+                Tech Lead & Principal Engineer
               </motion.div>
               
               <motion.h1
@@ -149,8 +187,8 @@ export default function Home() {
                 transition={{ delay: 0.4 }}
                 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               >
-                Building Full Stack
-                <span className="text-neon-green neon-glow block">Solutions</span>
+                Leading Technical
+                <span className="text-neon-green neon-glow block">Excellence</span>
               </motion.h1>
               
               <motion.p
@@ -159,8 +197,8 @@ export default function Home() {
                 transition={{ delay: 0.6 }}
                 className="text-xl text-dark-500 mb-8 leading-relaxed"
               >
-                I&apos;m Rajan Tandukar, a passionate full-stack developer and tech lead specializing in 
-                building robust backend systems and modern frontend applications with React, Next.js, and Angular.
+                I&apos;m Rajan Tandukar, a Tech Lead and Principal Engineer leading high-performing teams to design and deploy 
+                scalable, enterprise-grade architectures while mentoring engineers, driving technical excellence, and building intelligent AI-powered solutions with RAG and vector databases.
               </motion.p>
               
               <motion.div
@@ -201,7 +239,8 @@ export default function Home() {
               <div className="relative z-10">
                 <img
                   src="/rajan.jpeg"
-                  alt="Rajan Tandukar"
+                  alt="Rajan Tandukar - Tech Lead and Principal Engineer specializing in full-stack development and AI engineering"
+                  title="Rajan Tandukar - Tech Lead, Principal Engineer & AI Engineering Expert"
                   className="w-full max-w-md mx-auto rounded-2xl shadow-2xl border-2 border-neon-green/20"
                 />
               </div>
@@ -244,7 +283,7 @@ export default function Home() {
         </motion.div>
       </section>
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 bg-dark-800">
+      <section id="skills" className="py-20 px-6 bg-dark-800" aria-label="Technical and AI leadership skills section">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -253,10 +292,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Full Stack <span className="text-neon-green neon-glow">Expertise</span>
+              Technical & AI <span className="text-neon-green neon-glow">Leadership</span>
             </h2>
             <p className="text-xl text-dark-500 max-w-3xl mx-auto">
-              Specialized in building end-to-end solutions with robust backend systems and modern frontend applications
+              Expertise in architecting scalable systems, leading engineering teams, mentoring talent, driving technical strategy, and building intelligent AI-powered solutions
             </p>
           </motion.div>
 
@@ -264,63 +303,67 @@ export default function Home() {
             {/* Backend Skills */}
             <TechCard
               icon={Server}
-              title="API Development"
-              description="Building RESTful and GraphQL APIs with proper authentication, rate limiting, and comprehensive documentation."
-              technologies={["ASP.NET Core", "Node.js", "Express", "FastAPI"]}
-              gradient="bg-gradient-to-br from-primary-500 to-primary-700"
+              title="System Architecture"
+              description="Designing and architecting scalable microservices, APIs, and distributed systems with proper design patterns and best practices."
+              technologies={["Microservices", "Event-driven", "CQRS", "API Gateway"]}              gradient="bg-gradient-to-br from-primary-500 to-primary-700"
               delay={0.1}
             />
             
             <TechCard
               icon={Database}
-              title="Database Design"
-              description="Designing efficient database schemas, optimizing queries, and implementing proper data modeling strategies."
-              technologies={["SQL Server", "PostgreSQL", "MongoDB", "Redis"]}
-              gradient="bg-gradient-to-br from-accent-green to-emerald-600"
+              title="Team Leadership"
+              description="Mentoring engineers, conducting code reviews, fostering engineering culture, and driving technical growth across teams."
+              technologies={["Mentoring", "Code Review", "Architecture Review", "Technical Governance"]}              gradient="bg-gradient-to-br from-accent-green to-emerald-600"
               delay={0.2}
             />
             
             <TechCard
               icon={Cloud}
-              title="Cloud Architecture"
-              description="Architecting and deploying scalable cloud-native applications with microservices and serverless patterns."
-              technologies={["AWS", "Azure", "Docker", "Kubernetes"]}
-              gradient="bg-gradient-to-br from-accent-blue to-blue-600"
+              title="Cloud & DevOps Strategy"
+              description="Leading cloud architecture initiatives, implementing infrastructure as code, and establishing DevOps practices across teams."
+              technologies={["AWS", "Azure", "Docker", "Kubernetes"]}              gradient="bg-gradient-to-br from-accent-blue to-blue-600"
               delay={0.3}
             />
             
             {/* Frontend Skills */}
             <TechCard
               icon={Monitor}
-              title="Frontend Development"
-              description="Creating responsive, interactive user interfaces with modern frameworks and component-based architecture."
-              technologies={["React", "Next.js", "Angular", "TypeScript"]}
-              gradient="bg-gradient-to-br from-violet-500 to-purple-600"
+              title="Full Stack Engineering"
+              description="Deep expertise across frontend and backend technologies, setting technical standards and best practices."
+              technologies={["React", "Next.js", "Angular", "TypeScript"]}              gradient="bg-gradient-to-br from-violet-500 to-purple-600"
               delay={0.4}
             />
             
             <TechCard
               icon={Smartphone}
-              title="UI/UX Implementation"
-              description="Building pixel-perfect, accessible interfaces with modern CSS frameworks and design systems."
-              technologies={["Tailwind CSS", "Material UI", "Bootstrap", "Sass"]}
-              gradient="bg-gradient-to-br from-pink-500 to-rose-600"
+              title="Technical Decision Making"
+              description="Making informed technical decisions, evaluating technologies, and defining engineering roadmaps aligned with business goals."
+              technologies={["Technical Strategy", "Solution Design", "Technology Evaluation", "Roadmap Planning"]}              gradient="bg-gradient-to-br from-pink-500 to-rose-600"
               delay={0.5}
             />
             
             <TechCard
               icon={GitBranch}
-              title="DevOps & CI/CD"
-              description="Implementing automated deployment pipelines, infrastructure as code, and monitoring solutions."
-              technologies={["GitHub Actions", "Azure DevOps", "Terraform", "CloudWatch"]}
+              title="Quality & Standards"
+              description="Establishing coding standards, implementing quality assurance processes, and driving continuous improvement initiatives."
+              technologies={["Code Quality", "Testing Strategy", "Performance Optimization", "Security"]}
               gradient="bg-gradient-to-br from-accent-purple to-purple-600"
               delay={0.6}
+            />
+            
+            <TechCard
+              icon={Brain}
+              title="AI Engineering"
+              description="Building intelligent systems with Python, LangChain, RAG, vector databases, agentic workflows, and LLM integration. Expert in tool calling, prompt engineering, model orchestration, and data science frameworks for enterprise applications."
+              technologies={["Python", "LangChain", "RAG", "Vector Databases"]}
+              gradient="bg-gradient-to-br from-orange-500 to-red-600"
+              delay={0.7}
             />
           </div>
         </div>
       </section>
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
+      <section id="about" className="py-20 px-6" aria-label="About section - Professional background and experience">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -332,11 +375,12 @@ export default function Home() {
               <div className="relative">
                 <img
                   src="/rajan_yak.jpg"
-                  alt="Rajan Tandukar"
+                  alt="Rajan Tandukar - 13+ years experienced Tech Lead and Principal Engineer leading engineering teams"
+                  title="Rajan Tandukar - Engineering Leadership"
                   className="w-full max-w-lg rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-neon-green text-dark-900 p-6 rounded-xl shadow-lg neon-border">
-                  <div className="text-2xl font-bold">12+</div>
+                  <div className="text-2xl font-bold">13+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
               </div>
@@ -367,8 +411,8 @@ export default function Home() {
                   transition={{ delay: 0.4 }}
                   className="text-4xl lg:text-5xl font-bold text-white mb-6"
                 >
-                  Passionate About Building
-                  <span className="text-neon-green neon-glow block">Scalable Solutions</span>
+                  Leading Engineering
+                  <span className="text-neon-green neon-glow block">Innovation</span>
                 </motion.h2>
               </div>
               
@@ -380,19 +424,20 @@ export default function Home() {
                 className="space-y-4 text-lg text-dark-500 leading-relaxed"
               >
                 <p>
-                  With over 8 years of experience in backend development and technical leadership, 
-                  I specialize in architecting and building robust, scalable systems that power modern applications.
+                  As a Tech Lead and Principal Engineer with 13+ years of experience, I lead high-performing engineering teams 
+                  and architect scalable, enterprise-grade systems. I drive technical strategy, mentor talented engineers, 
+                  and ensure architectural excellence across all initiatives.
                 </p>
                 
                 <p>
-                  My expertise spans across cloud-native architectures, microservices, API design, 
-                  and DevOps practices. I&apos;m passionate about writing clean, maintainable code and 
-                  leading teams to deliver exceptional software solutions.
+                  My expertise spans cloud-native architectures, microservices, system design, team leadership, DevOps practices, 
+                  and modern AI engineering. I specialize in building intelligent systems using RAG, vector databases, semantic search, 
+                  and LLM integration to solve complex business problems.
                 </p>
                 
                 <p>
-                  I hold a BIT in Computing and Software Engineering from Islington College and 
-                  continuously stay updated with the latest technologies and industry best practices.
+                  I hold a BIT in Computing and Software Engineering from Islington College and stay at the forefront of 
+                  emerging technologies and industry best practices through continuous learning and community involvement.
                 </p>
               </motion.div>
               
@@ -404,12 +449,12 @@ export default function Home() {
                 className="grid grid-cols-2 gap-6 pt-6"
               >
                 <div className="text-center p-4 bg-dark-100 rounded-xl border border-neon-green/20">
-                  <div className="text-3xl font-bold text-neon-green mb-2">50+</div>
-                  <div className="text-dark-500">Projects Completed</div>
+                  <div className="text-3xl font-bold text-neon-green mb-2">13+</div>
+                  <div className="text-dark-500">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-dark-100 rounded-xl border border-neon-green/20">
-                  <div className="text-3xl font-bold text-neon-green mb-2">15+</div>
-                  <div className="text-dark-500">Technologies Mastered</div>
+                  <div className="text-3xl font-bold text-neon-green mb-2">50+</div>
+                  <div className="text-dark-500">Engineers Mentored</div>
                 </div>
               </motion.div>
             </motion.div>
@@ -417,7 +462,7 @@ export default function Home() {
         </div>
       </section>
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-dark-900">
+      <section id="projects" className="py-20 px-6 bg-dark-900" aria-label="Featured projects and architectural initiatives section">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -426,10 +471,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Featured <span className="text-neon-green neon-glow">Projects</span>
+              Architectural <span className="text-neon-green neon-glow">Initiatives</span>
             </h2>
             <p className="text-xl text-dark-500 max-w-3xl mx-auto">
-              Showcase of backend systems and applications I&apos;ve architected and developed
+              Key projects and systems I&apos;ve led, architected, and delivered with high-impact results
             </p>
           </motion.div>
 
@@ -478,6 +523,23 @@ export default function Home() {
               githubUrl="https://github.com/mystikraz"
               delay={0.3}
             />
+            
+            <ProjectCard
+              title="AI-Powered Intelligent Document Processing"
+              description="Enterprise document processing platform built with LangChain, leveraging RAG patterns, vector databases, and semantic search to extract, analyze, and classify documents with high accuracy using LLM integration."
+              techStack={["Node.js", "LangChain", "Pinecone", "OpenAI API"]}
+              architecture={["RAG Pattern", "LangChain Agents", "Vector Search", "Semantic Analysis"]}
+              features={[
+                "LangChain-powered workflows",
+                "Semantic document search",
+                "LLM-powered extraction with tool calling",
+                "RAG-based Q&A system",
+                "Multi-format document support",
+                "Sub-millisecond search latency"
+              ]}
+              githubUrl="https://github.com/mystikraz"
+              delay={0.4}
+            />
           </div>
 
           <motion.div
@@ -500,7 +562,7 @@ export default function Home() {
         </div>
       </section>
       {/* Resume Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6" aria-label="Resume download section">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -544,8 +606,46 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Hidden Skills Section for ATS & SEO */}
+      <section className="sr-only" aria-label="Complete Skills and Experience">
+        <h2>Professional Skills and Expertise</h2>
+        <div>
+          <h3>Technical Leadership & Management</h3>
+          <p>Tech Lead, Principal Engineer, Engineering Manager, Team Leadership, Mentoring, Code Review, Architecture Review, Technical Strategy, Roadmap Planning, Agile, Scrum</p>
+        </div>
+        <div>
+          <h3>Backend Development</h3>
+          <p>Python, FastAPI, Flask, ASP.NET Core, Node.js, Express.js, .NET 6, API Development, RESTful API, GraphQL, Microservices Architecture, Clean Architecture, Domain Driven Design, CQRS, Event Sourcing</p>
+        </div>
+        <div>
+          <h3>Frontend Development</h3>
+          <p>React, Next.js, Angular, TypeScript, HTML5, CSS3, Tailwind CSS, Material UI, Bootstrap, Responsive Design, UI/UX Implementation</p>
+        </div>
+        <div>
+          <h3>Cloud & DevOps</h3>
+          <p>AWS, Azure, Docker, Kubernetes, CI/CD Pipeline, GitHub Actions, Azure DevOps, Infrastructure as Code, Terraform, CloudWatch, Monitoring, Logging</p>
+        </div>
+        <div>
+          <h3>Databases & Data Technologies</h3>
+          <p>PostgreSQL, MongoDB, Redis, SQL Server, ElasticSearch, Pinecone, Weaviate, Milvus, Database Design, Query Optimization, Data Modeling, NoSQL</p>
+        </div>
+        <div>
+          <h3>AI Engineering & Machine Learning</h3>
+          <p>Python, LangChain, LangSmith, Large Language Models, RAG, Retrieval Augmented Generation, Vector Databases, Semantic Search, Hybrid Search, Embeddings, Prompt Engineering, Agentic Workflows, Tool Calling, Model Orchestration, OpenAI API, Claude API, Pinecone, Weaviate, Milvus, Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Jupyter, FastAPI, NLP, Machine Learning, Data Pipeline, AI Integration</p>
+        </div>
+        <div>
+          <h3>Architecture & System Design</h3>
+          <p>System Architecture, Microservices, Scalability, High Availability, Performance Optimization, Distributed Systems, Multi-tenant Architecture, Security, Enterprise Software, SaaS</p>
+        </div>
+        <div>
+          <h3>Years of Experience</h3>
+          <p>13+ years of professional experience as a developer, engineer, and technical leader</p>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-dark-800">
+      <section id="contact" className="py-20 px-6 bg-dark-800" aria-label="Contact form section">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
